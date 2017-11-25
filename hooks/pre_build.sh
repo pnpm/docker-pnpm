@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo > Dockerfile <<EOF
+cat > Dockerfile << EOF
 FROM node:${CACHE_TAG:-latest}
 
 RUN npm install -g pnpm
